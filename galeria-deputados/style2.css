@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    background-image: url(../fotos/Bandeira-fundo.jpg);
+    width: 100%;
+    background-size: cover;
+}
+.deputado {
+    border: 2px solid gold;
+    border-radius: 10px;
+    width: 230px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+#resultado-deputados{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pesquisa-deputados span {
+    font-size: 20px;
+    text-decoration: solid;
+}
+
+.deputado img {
+    width: 200px;
+}
+
+.pesquisa-deputados{
+    text-align: center;
+   
+    color:white;
+}
+.btn{
+text-decoration: none;
+color: black;
+background-color: gold;
+border-radius: 15px;
+padding: 10px;
+}
+
+.btn:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}

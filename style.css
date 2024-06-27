@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+}
+
+.container{
+    padding: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-logo{
+    display: flex;
+    align-items: center;
+    background-color: blue;
+   justify-content: space-around;
+   column-gap: 50px;
+   position: fixed;
+   width: 100%;
+}
+
+
+
+
+
+.logo {
+    list-style: none;
+}
+
+.logo a {
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    color: gold;
+    text-decoration: none;
+}
+
+.logo a:hover{
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+
+a img {
+    margin-right: 15px;
+}
+
+
+
+.menu ul {
+   display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a{
+    color: gold;
+    text-decoration: none;
+}
+
+.menu li:hover {
+    text-decoration: underline;
+   color: gold;
+}
+
+
+
+.logo-tipo {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    color: gold;
+}
+
+.menu-principal {
+    background: url(fotos/camara.jpg);
+    width: 100%;
+    background-size: cover;
+    padding-top: 200px;
+}
+
+.botao {
+    font-size: 30px;
+    color: white;
+    padding: 30px;
+}
+
+.btn {
+    text-decoration: none;
+    color: black;
+    background-color: gold;
+    border-radius: 15px;
+}
+
+.logo-tipo .btn {
+    padding: 10px;
+    font-size: 30px;
+}
+
+.btn:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#resultado-deputados{
+    margin-top: 20px;
+}
+
+.pesquisa-deputados h2{
+    text-align: center;
+}
+
+.pesquisa-deputados span {
+    font-size: 20px;
+    text-decoration: solid;
+}
+
+.imagens-cortadas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imagens {
+    flex: 1 1 30%;
+    max-width: 30%;
+    box-sizing: border-box;
+    margin: 10px;
+    text-align: center;
+}
+
+.imagens img {
+    width: 200px;
+    border: 2px solid gold;
+    border-radius: 10px;
+}
+
+.pesquise input {
+    width: 300px;
+}
+
+.pesquise .btn {
+    padding: 10px 5px;
+}
+
+
+
+.os-partidos {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.os-partidos img {
+    width: 300px;
+}
+
+.noticia {
+    margin-top: 50px;
+    text-align: center;
+    background-color: green;
+    width: 100%;
+    background-size: cover;
+}
+
+.noticia img {
+    margin-top: 10px;
+    width: 500px;
+    padding: 50px;
+    transition: transform 0.5s ease;
+}
+
+.noticia img:hover{
+    transform: scale(1.2);
+}
+
+
+.deputado {
+    border: 2px solid gold;
+    border-radius: 10px;
+    width: 230px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: none;
+    text-align: center;
+}
+
+.deputado img {
+    width: 200px;
+}
+
+.partido {
+    border: 2px solid gold;
+    border-radius: 10px;
+    width: 230px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: none;
+    text-align: center;
+}
+
+
+.eventos {
+    text-align: center;
+    margin-top: 20px;
+    padding: 50px;
+}
+
+.eventos h1 {
+    font-size: 50px;
+}
+
+
+.formulario {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    column-gap: 100px;
+    height: 20px;
+}
+
+.contatos {
+    text-align: center;
+    padding: 50px;
+}
+
+.contato {
+    margin-left: 50px;
+}
+
+.contato input{
+    height: 20px;
+}
+
+.opniao{
+    width: 300px;
+    height: 100px;
+}
+
+
+
+/*mobile*/
+
+.menu-opcao{
+     display: none;    
+   }
+
+#mobile-menu{
+    display: none;
+}
+
+.mobile-menu ul{
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+    text-decoration: none;
+}
+
+
+.mobile-menu a{
+    text-decoration: none;
+}
+
+.mobile-menu li{
+    list-style: none;
+    margin-top: 70px;
+    border: 1px solid black;
+    background-color: gold;
+    font-size: 50px;
+}
+
+@media (max-width: 500px) {
+   
+
+
+    
+    .menu-opcao{
+        display: block;   
+       }
+
+       .menu ul{
+        display: none;
+       }
+
+
+
+    /*menu*/
+   
+    .menu-principal{
+        width: 104%;
+       }
+   
+    .container{
+        padding: 0;
+        };
+
+
+    .logo{
+       width: 50%;
+    }
+
+
+    .logo-tipo{
+        font-size: 30px;
+        width: 100%;
+        
+
+    }
+
+  
+
+/*deputados*/
+
+
+    .mobile-deputados{
+    display: none;
+}
+
+.pesquisa-deputados{
+    text-align: right;
+}
+
+.pesquisa-deputados h2{
+    font-size: 20px;
+    text-align: left;
+}
+
+.pesquise{
+    width: 100px;
+}
+
+.pesquise input{
+    height: 20px;
+}
+
+/* partidos */
+.partidos{
+    display: none;
+}
+
+/* noticia */
+
+.noticia{
+width: 104%;
+}
+
+.noticia img{
+  width: 100%;
+    padding: 20px 0;
+}
+
+/*eventos*/
+
+
+.formulario{
+    display: inline-block;
+}
+
+.formulario  .btn{
+padding: 10px;
+margin-top: 10px;
+}
+
+
+/*contatos*/
+
+.contato{
+padding: 20px 0;
+}
+
+
+}
